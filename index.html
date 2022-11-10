@@ -9,40 +9,49 @@
     <title>REVO</title>
   </head>
   <body>
-  <div class="container">
+    <div class="container text-center">
+      <div class="header__upper position-absolute">
+        <div class="position-relative">
 
-      <div class="header position-relative">
-
-        <div class="header__top position-absolute top-0 end-0">
-          <div class="hstack gap-2">
-            <div class="header__logo col-9"><img src="./src/images/logo/logo.jpg" alt="Logo"></div>
-              <div class="header__cart col-3 ms-auto">
-                <img src="./src/images/image/icons/cart.png" alt="Cart" type="button" class="btn position-relative">
-                <span class="position-absolute top-0 translate-middle badge rounded-pill bg-warning">2<span class="visually-hidden"></span></span>
-              </div>
-          </div>
-        </div> <!-- /header__top row position-absolute -->
-
-        <div class="row">
-          <div class="header__block col p-0"></div>
-
-          <div class="header__inner img-fluid col p-0">
-            <!-- <img src="./src/images/image/header/slide.jpg" alt="Main"> -->
-            <div class="row">
-              <div class="header__title position-absolute">
-                Your
-                <span class="title__text">Personalized</span>
-                Coffee
-              </div>
-            </div>
+          <div class="position-absolute top-0 start-0">
+            <img src="./src/images/logo/logo.jpg" alt="Logo">
           </div>
 
-          <div class="header__nav col">
-            <div class="nav__inner">
+          <div class="position-absolute top-0 end-0">
+            <img class="image__cart" src="./src/images/image/icons/cart.png" alt="Cart">
+            <span class="cart__sup position-absolute text-white translate-middle badge rounded-circle text-bg-warning">
+              2</span>
+          </div>
+
+        </div>  <!--/position-relative -->
+      </div>  <!--/header__upper position-absolute -->
+
+      <div class="header row">
+        <div class="header__sub col-xl-2 col-md-1">
+          <!-- Уровень 1: .col-sm-3 -->
+        </div>
+
+        <div class="col-xl-10 col-md-11 col-sm-12">
+          <div class="row">
+            <div class="header__image col-xl-8 col-md-8 col-sm-12 position-relative">
               <div class="row">
+                <div class="header__player position-absolute">
+                  <div class="player__button"></div>
+                </div>
+
+                <div class="header__content position-absolute">
+                  YOUR
+                  <span class="header__personalized">PERSONALIZED</span>
+                  COFFEE
+                </div>
+              </div>
+            </div> <!-- /header__image col-8 col-sm-8 position-relative -->
+
+            <div class="header__nav col-xl-4 col-md-4 col-sm-12">
+              <div class="header__inner">
                 <div class="nav__title">TRANG CHỦ</div>
 
-                <nav class="nav flex-column">
+                <nav class="nav side__nav flex-column">
                   <a class="nav-link" href="#">COFFEE</a>
                   <a class="nav-link" href="#">PHIN MẠ MÀU</a>
                   <a class="nav-link" href="#">COMBO PHIN PHÊ</a>
@@ -50,10 +59,10 @@
                   <a class="nav-link" href="#">LIÊN HỆ</a>
                 </nav>
               </div>
-            </div> <!-- /nav__inner -->
-          </div> <!-- /header__nav col -->
+            </div> <!-- /header__nav -->
+          </div>
         </div>
       </div> <!-- /header -->
-    </div> <!-- /container -->
+    </div> <!-- /container text-center -->
   </body>
 </html>
