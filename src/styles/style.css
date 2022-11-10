@@ -101,12 +101,6 @@
 
 
 /* Media */
-@include media-breakpoint-up(xl) { 
-  .header__upper {
-    width: 915px;
-  }
-}
-
 @media (max-width: 1400px) {
   .header__upper {
     width: 917px;
