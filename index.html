@@ -9,37 +9,49 @@
     <title>REVO</title>
   </head>
   <body>
-    <div class="container">
+  <div class="container">
 
-      <div class="header">
+      <div class="header position-relative">
 
-        <div class="header__top row position-absolute">
-
-          <div class="header__logo col-11">
-            <img src="./src/images/logo/logo.jpg" alt="Logo">
+        <div class="header__top position-absolute top-0 end-0">
+          <div class="hstack gap-2">
+            <div class="header__logo col-9"><img src="./src/images/logo/logo.jpg" alt="Logo"></div>
+              <div class="header__cart col-3 ms-auto">
+                <img src="./src/images/image/icons/cart.png" alt="Cart" type="button" class="btn position-relative">
+                <span class="position-absolute top-0 translate-middle badge rounded-pill bg-warning">2<span class="visually-hidden"></span></span>
+              </div>
           </div>
-
-          <div class="header__cart col">
-            <img src="./src/images/image/icons/cart.png" alt="Cart" type="button" class="btn position-relative">
-            <span class="position-absolute top-0 translate-middle badge rounded-pill bg-warning">2<span class="visually-hidden">unread messages</span></span>
-          </div>
-
         </div> <!-- /header__top row position-absolute -->
 
         <div class="row">
-          <div class="header__block col">
-            <div class="header__title">
-              Your
-              <span class="title__text">Personalized</span>
-              Coffee
+          <div class="header__block col p-0"></div>
+
+          <div class="header__inner img-fluid col p-0">
+            <!-- <img src="./src/images/image/header/slide.jpg" alt="Main"> -->
+            <div class="row">
+              <div class="header__title position-absolute">
+                Your
+                <span class="title__text">Personalized</span>
+                Coffee
+              </div>
             </div>
           </div>
 
-          <div class="header__inner col-6"></div>
+          <div class="header__nav col">
+            <div class="nav__inner">
+              <div class="row">
+                <div class="nav__title">TRANG CHỦ</div>
 
-          <div class="header__nav col-3">
-
-          </div>
+                <nav class="nav flex-column">
+                  <a class="nav-link" href="#">COFFEE</a>
+                  <a class="nav-link" href="#">PHIN MẠ MÀU</a>
+                  <a class="nav-link" href="#">COMBO PHIN PHÊ</a>
+                  <a class="nav-link" href="#">GIFTSET</a>
+                  <a class="nav-link" href="#">LIÊN HỆ</a>
+                </nav>
+              </div>
+            </div> <!-- /nav__inner -->
+          </div> <!-- /header__nav col -->
         </div>
       </div> <!-- /header -->
     </div> <!-- /container -->
